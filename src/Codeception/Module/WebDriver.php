@@ -3409,7 +3409,7 @@ class WebDriver extends CodeceptionModule implements
      *
      * @return string Converted string
      */
-    private static function xpathLiteral(string $s)
+    private static function xpathLiteral($s)
         {
             if (false === strpos($s, "'")) {
                 return sprintf("'%s'", $s);
